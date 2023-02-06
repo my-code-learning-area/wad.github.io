@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        header {
+            background: #41e3ff;
+            background: #fff;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0 2rem;
+            box-shadow: 0px 0px 10px 0px #00000055;
+
+            position: sticky;
+            top: 0;
+        }
+
+        header .logo {
+            color: rgb(71, 34, 218);
+            padding-right: 2rem;
+        }
+
+        header .links {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            padding: 1.3rem;
+            display: inline-block;
+            transition: all ease-in-out 0.3s;
+            color: black;
+            font-weight: 500;
+        }
+
+        header ul li a:hover {
+            background-color: #0065fdaa;
+            color: white;
+        }
+
+        /* //////////////////////////////////////////// */
+        .container-with-aside {
+            display: flex;
+        }
+
+        .container-with-aside aside {
+            width: 20%;
+            border: 3px solid #131313;
+            background-color: #2d2d2d;
+        }
+
+        .container-with-aside aside ul {
+            list-style: none;
+        }
+
+        .container-with-aside aside ul li a {
+            text-decoration: none;
+            display: block;
+            padding: 15px 1rem;
+            border-bottom: 1.5px solid #9c9c9c53;
+            color: aliceblue;
+            transition: all ease-in-out 0.15s;
+            font-weight: 500;
+        }
+
+        .container-with-aside aside ul li a:hover {
+            background-color: #1d1d1d;
+            color: #0065fd;
+        }
+
+        .container-with-aside .container-body {
+            width: 90%;
+            padding: 1rem;
+            text-align: justify;
+        }
+
+        /* //////////////////////////////////////////// */
+
+        footer {
+            padding: 2rem;
+            background-color: #121212;
+        }
+
+        footer .links {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer h2 {
+            color: #0065fd;
+            margin-bottom: .5rem;
+        }
+
+        footer .links>div {
+            width: 100%;
+            min-height: 10rem;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer ul li {
+            padding: 2px 10px;
+            color: #cccccc;
+        }
+
+        footer ul li a {
+            /* text-decoration: none; */
+            display: inline-block;
+            color: #cccccc;
+            font-weight: 400;
+        }
+
+        footer ul li a:hover {
+            color: #ffffff;
+        }
+
+        footer .about {
+            width: 60%;
+            text-align: justify;
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+
+        footer .about h1 {
+            color: #0065fd;
+        }
+
+        footer hr {
+            border-color: rgb(110, 141, 255);
+        }
+
+        footer center {
+            color: #0065fd;
+        }
+
+        @media (max-width:1000px) {
+            .container-with-aside aside {
+                width: 40%;
+            }
+        }
+
+        @media (max-width:700px) {
+            .container-with-aside aside {
+                width: 50%;
+            }
+        }
+
+        @media (max-width:500px) {
+            .container-with-aside aside {
+                transform: translateX(-200px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">
+            SK
+        </h1>
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">LogOut</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container-with-aside">
+        <aside>
+            <ul>
+                <li>
+                    <a href="#">CC</a>
+                </li>
+                <li>
+                    <a href="#">CCL</a>
+                </li>
+                <li>
+                    <a href="#">WPD</a>
+                </li>
+                <li>
+                    <a href="#">WPDL</a>
+                </li>
+                <li>
+                    <a href="#">CNS</a>
+                </li>
+                <li>
+                    <a href="#">CNSL</a>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="container-body">
+            <h1>Content</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, repudiandae delectus sequi quasi esse a
+            optio odio harum repellat, magnam blanditiis aspernatur deleniti, ex error cum tenetur itaque voluptas illum
+            molestias iure. Tempore iste laborum hic in esse. Assumenda minus tempora odit odio totam, exercitationem
+            eius neque vero dicta tenetur? Iste nobis deserunt quod, deleniti doloribus quibusdam adipisci magnam
+            voluptates commodi minus porro consequatur beatae voluptatem possimus. Esse officiis voluptas nobis ut vel
+            quis non, accusamus sit doloremque beatae quas, eos ducimus asperiores et sequi nulla. At in quia sunt eius
+            minus deserunt facere sed molestias. Aliquid fugit architecto perspiciatis, officiis culpa aut totam
+            sapiente ad adipisci possimus dicta tempora saepe veniam eum commodi labore alias recusandae, at rem cumque
+            quas nostrum? Placeat amet ullam vero nulla asperiores! Doloremque animi fugit, labore tempora magnam dolore
+            quidem eos laborum quaerat, voluptas aliquid hic excepturi ipsum natus? Atque, praesentium? Totam repellat,
+            repudiandae unde, eos eaque accusamus dicta voluptas hic quo dolorum at nisi earum labore adipisci illo
+            fugiat placeat est laudantium. Numquam adipisci rem cupiditate, temporibus nihil eaque fugit. Non, ex
+            voluptas. Veniam accusamus esse culpa ab at? Modi suscipit commodi earum amet excepturi perferendis! Amet,
+            placeat non deserunt officia fugiat iure.
+            <br>
+            <br>
+            <h1>About</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, facere. Quis minus a facere placeat
+            at nobis consequuntur hic omnis possimus ex natus, quibusdam, nisi molestias recusandae autem qui in.
+            Excepturi quis tempora illo vero expedita nesciunt, nostrum modi ex fugiat tenetur libero adipisci nisi
+            dicta itaque blanditiis quam dolorem deserunt officia quos incidunt voluptas quasi impedit. Architecto nobis
+            id, vero quasi molestiae facilis corrupti quaerat quod expedita inventore necessitatibus adipisci, ut
+            aliquam natus modi nostrum, qui sequi asperiores fuga. At fuga minima laboriosam quos nostrum, autem ea
+            illum, deleniti inventore velit magni pariatur sapiente laudantium exercitationem. Ipsum eos id ut a
+            blanditiis.
+            <br>
+            <br>
+            <h1>Info</h1>
+            Iusto, in? Sequi aperiam sapiente repudiandae! Ab natus quis, tenetur dicta saepe perferendis
+            illo veritatis accusantium labore officia? Nihil sunt incidunt est in perspiciatis quam tempore sed
+            assumenda laborum! Explicabo quisquam veniam iure, blanditiis, voluptatibus soluta necessitatibus architecto
+            ratione saepe at quas consectetur distinctio quos suscipit, sed pariatur vitae repudiandae itaque. Atque
+            corporis consectetur ipsam, ab quos quod! Consequatur nisi iste nulla inventore molestias cupiditate beatae
+            saepe repellendus, sunt quia tempora voluptas ullam ex alias aliquid minus incidunt fugit recusandae
+            obcaecati. Aspernatur nulla cupiditate odio cumque quisquam natus maxime ea, nisi veniam omnis aperiam id
+            non quidem error explicabo hic quam quas molestiae. Quaerat expedita blanditiis possimus minima incidunt
+            quasi, dolorem fugiat in, magnam architecto ea aliquid eos exercitationem ipsa quo voluptatem? Quisquam
+            dolores vel quasi dignissimos dolor neque fugit, optio quas dolorum suscipit nisi odio expedita cum ex,
+            provident cumque numquam magnam. Exercitationem, mollitia harum ad ipsam perferendis magnam vero porro?
+            Voluptatum placeat optio iste impedit dicta possimus dignissimos laborum deleniti doloremque quidem! Eius
+            reiciendis, voluptate facere quae fuga esse dolorum deserunt est consequatur recusandae veritatis fugiat
+            laudantium, vero explicabo suscipit magnam, alias maxime totam asperiores eligendi. Asperiores unde
+            perferendis dignissimos nam doloribus nulla modi maiores eum fugiat, nihil consequatur. Vel itaque assumenda
+            ipsa deserunt, placeat iusto eveniet. Iure, eveniet nam officia ipsa animi enim expedita pariatur dolor nisi
+            dignissimos aspernatur! Dolorum omnis aut enim voluptates dolorem assumenda, sint iste dolore voluptas, in
+            mollitia earum animi molestiae adipisci distinctio, voluptatibus quia? Dolorem earum fugit tempora, vero
+            odit, nihil mollitia, repellat deserunt dolores exercitationem eos officia repudiandae suscipit facilis
+            possimus illum debitis dignissimos dicta quae! Cumque facilis eos molestiae enim, doloribus corporis
+            exercitationem officiis similique, esse, rem possimus sed.
+            <br>
+            <br>
+            <h1>Help</h1>
+            Cum animi id laborum! Vel dicta similique autem
+            enim deleniti distinctio officia blanditiis dolor consectetur, doloremque ducimus dolorem doloribus ipsam
+            at, porro facere adipisci omnis architecto nulla laboriosam odit quod? Commodi modi facere autem accusamus
+            nisi aliquam officia minus, dolorum voluptatibus vero enim, dolorem fugiat quisquam asperiores. Adipisci
+            incidunt sunt corporis expedita quisquam? Blanditiis incidunt ipsam, at cumque iusto aspernatur eligendi
+            fugit amet minima excepturi voluptatem doloremque corporis doloribus ex, velit magnam illo beatae repellat,
+            quam molestiae quaerat culpa. Amet laudantium reiciendis, iure minus corrupti iusto at aliquid deleniti
+            molestiae voluptas animi aut voluptates repellendus nostrum voluptatem recusandae tempore quo, rerum ea qui
+            nemo incidunt nihil facere! Expedita tenetur aspernatur vero esse nam fuga magni adipisci! Animi, tenetur!
+        </div>
+    </div>
+
+    <footer>
+        <div class="about">
+            <h1>SK</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatibus rerum recusandae natus
+                dolorem quasi vel iusto, praesentium vitae saepe hic repellat odit libero sed fugiat necessitatibus
+                adipisci eius! Ullam iusto rem consequatur sint voluptates nobis temporibus omnis, et, enim tenetur
+                optio corrupti! Deserunt nemo rem obcaecati tempore sit nulla eius iusto amet debitis? Eligendi totam,
+                officiis, numquam ullam laborum deserunt hic expedita ut repellendus architecto enim facilis laudantium
+                nulla optio blanditiis ad molestiae cumque saepe quae recusandae natus deleniti aliquid? Nulla illum
+                reiciendis nihil repudiandae molestias. Rem, dolorem. Provident perferendis officia, mollitia aut
+                aspernatur facere voluptatibus quasi maxime quos.
+            </p>
+        </div>
+        <div class="links">
+            <div>
+                <h2>Important Links</h2>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>Help Section</h2>
+                <ul>
+                    <li>
+                        <a href="#">Help & Support</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ.</a>
+                    </li>
+                    <li>
+                        <a href="#">Customer Care</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>
+                        <b>Address</b>: Lorem ipsum dolor sit amet consectetur. sit amet consectetur.
+                    </li>
+                    <li>
+                        <b>Email</b>: <a href="#">support@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <center>©Copyright SK</center>
+    </footer>
+</body>
+
+</html>
